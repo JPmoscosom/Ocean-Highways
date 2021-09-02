@@ -1,0 +1,34 @@
+{
+  "name": "api-ocean-highways",
+  "version": "1.0.0",
+  "description": "Proyecto backend del curso de desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./api",
+    "dev": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPmoscosom/Ocean-Highways.git"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "postgres"
+  ],
+  "author": "JPmoscosom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPmoscosom/Ocean-Highways/issues"
+  },
+  "homepage": "https://github.com/JPmoscosom/Ocean-Highways#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pg": "^8.7.1"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
