@@ -1,4 +1,4 @@
-# API AGENCIA DE VIAJES - ??
+# API AGENCIA DE VIAJES - Ocean Highways
 
 - Reservas
     - Crear reservas
@@ -15,7 +15,7 @@
 ### Endpoints
     - Registro o creacion `http://localhost:3000/usuarios`
     - Modificar usuario
-    - Eliminar usuario 
+    - Eliminar usuario
     - Consultar usuario
     - Login
 ### Informacion
@@ -28,6 +28,4 @@
 - Lugares de destino
     - Consultas de lugares
     - Crear lugar de destino
-    - Eliminar 
-
-
+    - Eliminar

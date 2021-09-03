@@ -3,7 +3,7 @@ const _pg = new PostgresService()
 
 
 
-const crearLugar = async (Lugar) => {
+const crearLugar = async (lugar) => {
     const sql = 'INSERT INTO public.lugares (id, nombre, pais, ciudad, direccion) VALUES($1, $2, $3, $4, $5);'
     const datos = [lugar.id, lugar.nombre, lugar.pais, lugar.ciudad, lugar.direccion]
     return await _pg.ejecutarQuery(sql, datos)
@@ -12,7 +12,7 @@ const crearLugar = async (Lugar) => {
 
 
 const consultarLugares = async (id) => {
-    let sql = 'SELECT nombre, pais, ciudad, direccion, id  FROM lugars'
+    let sql = 'SELECT nombre, pais, ciudad, direccion, id  FROM lugares'
     if (id) {
         sql += ` WHERE id = $1`
         const datos = [id]
@@ -33,3 +33,6 @@ const modificarLugar = async (lugar) => {
     const datos = [lugar.nombre, lugar.pais, lugar.ciudad, lugar.id]
     return await _pg.ejecutarQuery(sql, datos)
 }
+
+
+module.exports = {  modificarLugar, eliminarLugar, crearLugar, consultarLugares }

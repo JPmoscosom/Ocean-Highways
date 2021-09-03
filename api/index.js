@@ -11,6 +11,10 @@ app.use(express.json())
 const router_usuario =  require('./routers/usuarios.router');
 app.use(router_usuario)
 
+const router_lugar =  require('./routers/lugares.router');
+app.use(router_lugar)
+
+
 
 // Definir el puerto donde se ejecuta el API
 const port = 3000
