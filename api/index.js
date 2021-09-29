@@ -14,6 +14,8 @@ app.use(router_usuario)
 const router_lugar =  require('./routers/lugares.router');
 app.use(router_lugar)
 
+const router_reservas =  require('./routers/reservas.router');
+app.use(router_reservas)
 
 
 // Definir el puerto donde se ejecuta el API
