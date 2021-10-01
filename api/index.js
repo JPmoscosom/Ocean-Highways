@@ -12,11 +12,11 @@ app.use(express.json())
 const router_public_usuario =  require('./routers/usuarios.public.router');
 app.use(router_public_usuario)
 
-const router_public_lugar =  require('./routers/lugares.router');
-app.use(router_lugar)
+// const router_public_lugar =  require('./routers/lugares.router');
+// app.use(router_lugar)
 
-const router_public_reservas =  require('./routers/reservas.router');
-app.use(router_reservas)
+// const router_public_reservas =  require('./routers/reservas.router');
+// app.use(router_reservas)
 
 //*********** MIDDLEWARE JWT */
 const auth_middleware = require('./controllers/auth.middleware');
@@ -35,7 +35,7 @@ app.use(router_reservas)
 
 
 // Definir el puerto donde se ejecuta el API
-const port = 3000
+const port = 3001
 
 // Inicializar el API
 app.listen(port, () => {
